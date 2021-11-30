@@ -1,5 +1,5 @@
 #pragma once
-#include "Point.h"
+
 #include "Ball.h"
 
 class Field {
@@ -8,9 +8,16 @@ class Field {
 
 public:
 	Field();
-	Field(Point origin, double width, double height, Point ballStartPoint, double ballDiameter);
-	Field(Point endPoints[4], Point ballStartPoint, double ballDiameter);
+	Field(Point origin, double width, double height, Ball ball);
+	Field(Point endPoints[4], Ball ball);
 
 	void hit(Point target, double power);
+
+	friend ostream& operator<<(ostream& os, const Field& f);
+	friend void ballCase(Field& f);
+
 };
+
+void simpleCase(Field& f);
+void complexCase(Field& f);
 
