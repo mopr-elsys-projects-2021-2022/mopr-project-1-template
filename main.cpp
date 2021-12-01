@@ -24,7 +24,7 @@ int main() {
 						cout << endl;
 						complexCase(field);
 						break;
-					// 'b' stands for "ball case" - keeps the same field and only change the ball position
+					// 'b' stands for "ball case" - keeps the same field and only changes the ball position
 					case 'b':
 						cout << endl;
 						ballCase(field);
