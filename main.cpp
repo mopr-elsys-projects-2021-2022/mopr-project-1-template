@@ -28,6 +28,7 @@ int main() {
 					case 'b':
 						cout << endl;
 						ballCase(field);
+						break;
 					default:
 						cout << "Invalid command. Try again." << endl;
 				}
