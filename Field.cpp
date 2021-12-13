@@ -9,6 +9,7 @@ Field::Field(Point origin, double width, double height, Ball ball) {
 	endPoints[3] = Point(origin.x, origin.y + height);
 
 	this->ball = ball;
+	this->startingPoint = ball.center;
 }
 
 Field::Field(Point endPoints[4], Ball ball) {
@@ -17,6 +18,7 @@ Field::Field(Point endPoints[4], Ball ball) {
 	}
 
 	this->ball = ball;
+	this->startingPoint = ball.center;
 }
 
 void Field::hit(Point target, double power) {

@@ -4,6 +4,7 @@
 
 class Field {
 	Ball ball;
+	Point startingPoint;
 	Point endPoints[4];
 
 public:
@@ -20,4 +21,4 @@ public:
 
 void simpleCase(Field& f);
 void complexCase(Field& f);
-
+void ballCase(Field& f);
